@@ -45,7 +45,7 @@ if (( $+commands[peco] )); then
 
     BUFFER=$(
       echo $BUFFER \
-      | sd '\\n' "\n" \
+      | sd '\\n' "\\\n" \
       | sd '\t' "\t" \
     )
 
